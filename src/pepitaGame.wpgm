@@ -17,6 +17,7 @@ program PepitaGame {
 	game.addVisual(buenosAires)
 	game.addVisual(villaGesell)
 	game.addVisual(pepita)
+	game.whenCollideDo(pepita, {objecto=> objecto.teEncontro(game)})
 
 //	TECLADO
 	keyboard.h().onPressDo { game.say(pepita, "Hola chiques!") }

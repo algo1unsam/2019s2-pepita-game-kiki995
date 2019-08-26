@@ -10,7 +10,7 @@ object pepita {
 
 	method come(comida) {
 		energia = energia + comida.energia()
-	}
+			}
 	
 	method volaHacia(unaCiudad) {
 		if (ciudad != unaCiudad) {
