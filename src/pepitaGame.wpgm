@@ -1,3 +1,4 @@
+import Roque.*
 import pepita.*
 import ciudades.*
 import comidas.*
@@ -17,6 +18,7 @@ program PepitaGame {
 	game.addVisual(buenosAires)
 	game.addVisual(villaGesell)
 	game.addVisual(pepita)
+	game.addVisual(roque)
 	game.whenCollideDo(pepita, {objecto=> objecto.teEncontro(pepita)})
 
 //	TECLADO
@@ -28,10 +30,10 @@ program PepitaGame {
 							
 	keyboard.a().onPressDo { pepita.irAcomer(alpiste)}
 
-	keyboard.up().onPressDo ({pepita.move(pepita.position().up(1))})
-	keyboard.down().onPressDo {pepita.move(pepita.position().down(1))}
-	keyboard.left().onPressDo {pepita.move(pepita.position().left(1))}
-	keyboard.right().onPressDo {pepita.move(pepita.position().right(1))}
+	keyboard.up().onPressDo ({roque.move(roque.position().up(1))})
+	keyboard.down().onPressDo {roque.move(roque.position().down(1))}
+	keyboard.left().onPressDo {roque.move(roque.position().left(1))}
+	keyboard.right().onPressDo {roque.move(roque.position().right(1))}
 		
 //	START
 	game.start()
