@@ -6,7 +6,7 @@ object villaGesell {
 	
 	method nombre() = "Villa Gesell"
 	
-		method teEncontro(alguien){	}
+	method teEncontro(alguien){	}
 }
 
 object buenosAires {
